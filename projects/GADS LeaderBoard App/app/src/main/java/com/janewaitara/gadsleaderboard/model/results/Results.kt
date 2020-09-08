@@ -1,4 +1,4 @@
-package com.janewaitara.gadsleaderboard.model
+package com.janewaitara.gadsleaderboard.model.results
 
 sealed class Result <out T>
 
