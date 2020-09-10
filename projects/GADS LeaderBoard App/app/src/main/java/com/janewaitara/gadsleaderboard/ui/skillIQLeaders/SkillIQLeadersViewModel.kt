@@ -21,12 +21,11 @@ class SkillIQLeadersViewModel(private val repository: LeaderRepository): ViewMod
         viewModelScope.launch {
             val skillIQLeaders = repository.getSkillIQLeader()
 
-            skillIQLeadersViewState.value = SkillLeadersSuccess(skillIQLeaders)
+            skillIQLeadersViewState.value = SkillIQLeadersSuccess(skillIQLeaders)
         }
     }
-
 }
 
 sealed class SkillIQLeadersViewState
 object SkillIQLeadersLoading: SkillIQLeadersViewState()
-data class SkillLeadersSuccess(val skillIQLeaders: Result<List<SkillIQLeaders>>): SkillIQLeadersViewState()
+data class SkillIQLeadersSuccess(val skillIQLeaders: Result<List<SkillIQLeaders>>): SkillIQLeadersViewState()
