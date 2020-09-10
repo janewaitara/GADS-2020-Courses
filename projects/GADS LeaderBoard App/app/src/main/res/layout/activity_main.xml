@@ -14,7 +14,6 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/main_toolbar"
-            style="@style/Widget.MaterialComponents.Toolbar.Primary"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
@@ -39,7 +38,7 @@
                     android:id="@+id/submit_button"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-
+                    android:background="@drawable/button_bg"
                     android:text="@string/submit"
                     android:textColor="@color/colorPrimary"
                     android:textAllCaps="false" />
@@ -53,16 +52,12 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             app:tabIndicatorHeight="3dp"
+            app:tabTextColor="@color/colorAccent"
             app:tabMode="fixed"
             app:tabSelectedTextColor="@android:color/white"
             app:tabIndicatorColor="@android:color/white"/>
 
     </com.google.android.material.appbar.AppBarLayout>
-
-<!--    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>-->
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager2"
