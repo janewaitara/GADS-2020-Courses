@@ -1,4 +1,4 @@
-package com.janewaitara.gadsleaderboard.ui.skilIQLeaders
+package com.janewaitara.gadsleaderboard.ui.skillIQLeaders
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

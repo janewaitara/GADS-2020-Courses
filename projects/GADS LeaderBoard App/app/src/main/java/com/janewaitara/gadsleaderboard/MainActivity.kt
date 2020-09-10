@@ -8,7 +8,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import com.janewaitara.gadsleaderboard.ui.learnerLeaders.LearnersLeaderFragment
-import com.janewaitara.gadsleaderboard.ui.skilIQLeaders.SkillIQLeadersFragment
+import com.janewaitara.gadsleaderboard.ui.skillIQLeaders.SkillIQLeadersFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

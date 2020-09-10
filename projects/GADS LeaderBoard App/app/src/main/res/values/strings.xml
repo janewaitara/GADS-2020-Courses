@@ -4,7 +4,9 @@
     <string name="hello_learners_fragment">Hello Learners fragment</string>
     <string name="hello_skillIQ_fragment">Hello Skill IQ  fragment</string>
     <string name="learner_name">Learner Name</string>
-    <string name="leaders_hrs_and_country">leaders hrs and country %1$s </string>
+    <string name="leaders_hrs_and_country">leaders hrs and country</string>
     <string name="leaders_hrs_and_country_entry">%1$s learning hours, %2$s </string>
+    <string name="leaders_skillIQ_and_country">leaders skill IQ and country</string>
+    <string name="leaders_skillIQ_and_country_entry">%1$s learning skill IQ, %2$s </string>
     <string name="badge_image">Badge Image</string>
 </resources>

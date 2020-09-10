@@ -3,12 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.skilIQLeaders.SkillIQLeadersFragment">
+    tools:context=".ui.skillIQLeaders.SkillIQLeadersFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/skillIQLeaderRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_skillIQ_fragment" />
+        />
+
+    <ImageView
+        android:src="@drawable/loading_animation"
+        android:id="@+id/leader_loading_anim"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
 
 </RelativeLayout>
+

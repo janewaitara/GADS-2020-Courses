@@ -16,31 +16,31 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/learning_leader_name"
+            android:id="@+id/skillIQ_leader_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/learning_leader_image"
+            android:layout_toEndOf="@+id/skillIQ_leader_image"
             android:layout_marginStart="10dp"
             android:layout_marginTop="30dp"
             android:textStyle="bold"
             android:text="@string/learner_name" />
 
         <ImageView
-            android:id="@+id/learning_leader_image"
+            android:id="@+id/skillIQ_leader_image"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:contentDescription="@string/badge_image"
             app:srcCompat="@drawable/toplearner" />
 
         <TextView
-            android:id="@+id/learning_leader_hours_country"
+            android:id="@+id/skillIQ_leader_skills_country"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_toEndOf="@+id/learning_leader_image"
-            android:layout_below="@+id/learning_leader_name"
+            android:layout_toEndOf="@+id/skillIQ_leader_image"
+            android:layout_below="@+id/skillIQ_leader_name"
             android:layout_marginTop="5dp"
-            android:text="@string/leaders_hrs_and_country" />
+            android:text="@string/leaders_skillIQ_and_country" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
