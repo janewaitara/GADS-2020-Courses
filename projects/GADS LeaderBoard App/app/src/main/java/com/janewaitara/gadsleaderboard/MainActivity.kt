@@ -4,12 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentPagerAdapter
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayoutMediator
-import com.janewaitara.gadsleaderboard.ui.LearnersLeaderFragment
-import com.janewaitara.gadsleaderboard.ui.SkillIQLeadersFragment
+import com.janewaitara.gadsleaderboard.ui.learnerLeaders.LearnersLeaderFragment
+import com.janewaitara.gadsleaderboard.ui.skilIQLeaders.SkillIQLeadersFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

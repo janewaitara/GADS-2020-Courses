@@ -3,12 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.LearnersLeaderFragment">
+    tools:context=".ui.learnerLeaders.LearnersLeaderFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/learnerLeaderRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_learners_fragment"
-        android:gravity="center"/>
+        />
+
+    <ImageView
+        android:src="@drawable/loading_animation"
+        android:id="@+id/leader_loading_anim"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
 
 </RelativeLayout>
