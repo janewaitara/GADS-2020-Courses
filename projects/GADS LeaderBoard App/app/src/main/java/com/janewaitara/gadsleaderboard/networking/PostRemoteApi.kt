@@ -6,7 +6,7 @@ class PostRemoteApi (private val postRemoteApiService: PostRemoteApiService){
 
     /**
      * Post to the form*/
-    suspend fun postFormData(firstName: String, lastName: String, emailAddress: String, gitHubLink: String ): Result<Void> = try{
+    suspend fun postFormData(firstName: String, lastName: String, emailAddress: String, gitHubLink: String): Result<Void> = try{
 
         Success(postRemoteApiService.submitFormData(firstName, lastName, emailAddress, gitHubLink))
 
