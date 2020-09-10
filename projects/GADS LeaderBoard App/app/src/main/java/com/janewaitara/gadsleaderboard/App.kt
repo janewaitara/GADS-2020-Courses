@@ -2,10 +2,7 @@ package com.janewaitara.gadsleaderboard
 
 import android.app.Application
 import android.content.res.Resources
-import com.janewaitara.gadsleaderboard.di.networkModule
-import com.janewaitara.gadsleaderboard.di.presentationModule
-import com.janewaitara.gadsleaderboard.di.remoteApiModule
-import com.janewaitara.gadsleaderboard.di.repositoryModule
+import com.janewaitara.gadsleaderboard.di.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -36,7 +33,9 @@ class App: Application() {
             modules(
                 listOf(
                     remoteApiModule,
-                    networkModule,
+                    postRemoteApiModule,
+                    getNetworkModule,
+                    postNetworkModule,
                     repositoryModule,
                     presentationModule
                 )

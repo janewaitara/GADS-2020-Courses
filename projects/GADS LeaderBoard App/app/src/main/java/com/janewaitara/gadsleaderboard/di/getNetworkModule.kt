@@ -1,7 +1,7 @@
 package com.janewaitara.gadsleaderboard.di
 
-import com.janewaitara.gadsleaderboard.networking.RemoteApi
-import com.janewaitara.gadsleaderboard.networking.RemoteApiService
+import com.janewaitara.gadsleaderboard.networking.GetRemoteApi
+import com.janewaitara.gadsleaderboard.networking.GetRemoteApiService
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit
 
 const val GET_BASE_URL = "https://gadsapi.herokuapp.com"
 
-val networkModule = module {
+val getNetworkModule = module {
     //Logging Interceptor
     single { HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY) }
 
@@ -44,10 +44,10 @@ val networkModule = module {
     }
     //create RemoteApi
     single {
-        get<Retrofit>().create(RemoteApiService::class.java)
+        get<Retrofit>().create(GetRemoteApiService::class.java)
     }
 }
 
 val remoteApiModule = module {
-    single { RemoteApi(get()) }
+    single { GetRemoteApi(get()) }
 }

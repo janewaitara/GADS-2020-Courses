@@ -8,7 +8,7 @@ import retrofit2.http.GET
  * Represent the API calls you can make
  * */
 
-interface RemoteApiService {
+interface GetRemoteApiService {
 
     //get learning leaders
     @GET("/api/hours")

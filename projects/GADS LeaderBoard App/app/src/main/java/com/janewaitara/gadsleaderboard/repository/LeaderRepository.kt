@@ -1,9 +1,9 @@
 package com.janewaitara.gadsleaderboard.repository
 
-import com.janewaitara.gadsleaderboard.networking.RemoteApi
+import com.janewaitara.gadsleaderboard.networking.GetRemoteApi
 
-class LeaderRepository(private val remoteApi: RemoteApi) {
+class LeaderRepository(private val getRemoteApi: GetRemoteApi) {
     
-    suspend fun getLearnersLeader() = remoteApi.getLearnersLeaders()
-    suspend fun getSkillIQLeader() = remoteApi.getSkillIQLeaders()
+    suspend fun getLearnersLeader() = getRemoteApi.getLearnersLeaders()
+    suspend fun getSkillIQLeader() = getRemoteApi.getSkillIQLeaders()
 }

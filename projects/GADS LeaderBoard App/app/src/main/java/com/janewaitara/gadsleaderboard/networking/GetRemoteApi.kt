@@ -7,7 +7,7 @@ import com.janewaitara.gadsleaderboard.model.data.SkillIQLeaders
 import com.janewaitara.gadsleaderboard.model.results.Failure
 import com.janewaitara.gadsleaderboard.model.results.Result
 
-class RemoteApi(private val remoteApiService: RemoteApiService) {
+class GetRemoteApi(private val getRemoteApiService: GetRemoteApiService) {
 
     /**
      * Get Learners Leaders*/
@@ -15,7 +15,7 @@ class RemoteApi(private val remoteApiService: RemoteApiService) {
     suspend fun getLearnersLeaders(): Result<List<LearningLeaders>> = try {
         Log.d("Learners", "Most Active learners")
 
-        val learnersLeaders = remoteApiService.getLearningLeaders()
+        val learnersLeaders = getRemoteApiService.getLearningLeaders()
 
         Log.d("Learners", "${learnersLeaders[0].name} \n ${learnersLeaders[0].hours}")
 
@@ -29,7 +29,7 @@ class RemoteApi(private val remoteApiService: RemoteApiService) {
     suspend fun getSkillIQLeaders(): Result<List<SkillIQLeaders>> = try {
         Log.d("Skill IQ Learners", "Learners with the highest IQ")
 
-        val skillIQLeaders = remoteApiService.getSkillIQLeaders()
+        val skillIQLeaders = getRemoteApiService.getSkillIQLeaders()
 
         Log.d("Skill IQ Learners", "${skillIQLeaders[0].name} \n ${skillIQLeaders[0].score}")
 
