@@ -28,14 +28,15 @@ class App: Application() {
      * Dependency injection with Koin*/
     private fun startingKoin() {
         startKoin {
+
             androidLogger(Level.DEBUG)
             androidContext(this@App)
+
             modules(
                 listOf(
-                    remoteApiModule,
+                    networkModule,
+                    getRemoteApiModule,
                     postRemoteApiModule,
-                    getNetworkModule,
-                    postNetworkModule,
                     repositoryModule,
                     presentationModule
                 )
