@@ -69,7 +69,7 @@
             android:inputType="textPersonName"
             android:hint="@string/first_name"
             android:padding="@dimen/half_padding"
-            android:textColorHint="@color/colorPrimary" />
+           />
 
         <EditText
             android:id="@+id/last_name"
@@ -83,7 +83,7 @@
             android:hint="@string/last_name"
             android:inputType="textPersonName"
             android:padding="@dimen/half_padding"
-            android:textColorHint="@color/colorPrimary" />
+           />
     </LinearLayout>
 
     <EditText
@@ -97,7 +97,7 @@
         android:hint="@string/email_address"
         android:inputType="textEmailAddress"
         android:padding="@dimen/half_padding"
-        android:textColorHint="@color/colorPrimary" />
+        />
 
     <EditText
         android:id="@+id/github_link"
@@ -110,7 +110,7 @@
         android:hint="@string/project_on_github_link"
         android:inputType="text"
         android:padding="@dimen/half_padding"
-        android:textColorHint="@color/colorPrimary" />
+        />
 
     <Button
         android:id="@+id/submit_btn"
@@ -124,4 +124,12 @@
         android:paddingEnd="@dimen/half_padding"
         android:text="@string/submit"
         android:textColor="@android:color/white" />
+    <ImageView
+        android:src="@drawable/loading_animation"
+        android:id="@+id/loading_anim_image"
+        android:visibility="invisible"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
 </RelativeLayout>

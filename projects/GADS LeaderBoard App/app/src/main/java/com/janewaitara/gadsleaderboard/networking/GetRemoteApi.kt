@@ -21,7 +21,7 @@ class GetRemoteApi(private val getRemoteApiService: GetRemoteApiService) {
 
         Success(learnersLeaders)
     }catch (error: Throwable){
-        Failure(error)
+        Failure(error.toString())
     }
 
     /**
@@ -35,6 +35,6 @@ class GetRemoteApi(private val getRemoteApiService: GetRemoteApiService) {
 
         Success(skillIQLeaders)
     }catch (error: Throwable){
-        Failure(error)
+        Failure(error.toString())
     }
 }
