@@ -15,4 +15,8 @@
     <string name="email_address">Email Address</string>
     <string name="last_name">Last Name</string>
     <string name="first_name">First Name</string>
+    <string name="confirmation_msg">Are you sure ?</string>
+    <string name="confirm">Yes</string>
+    <string name="successful">Submission Successful</string>
+    <string name="failed">Submission not Successful</string>
 </resources>

@@ -62,10 +62,10 @@ class LearnersLeaderFragment : Fragment() {
                     is Success -> {
                         showLoading(false)
                         learningLeadersAdapter.setLearningLeaders(learningLeaderViewState.learningLeaders.data)
-                        Toast.makeText(context, learningLeaderViewState.learningLeaders.data.toString(), Toast.LENGTH_LONG).show()
+                        Toast.makeText(context, "Successfully Fetched the leaders", Toast.LENGTH_SHORT).show()
                     }
                     is Failure -> {
-                        Toast.makeText(context, learningLeaderViewState.learningLeaders.error.toString(), Toast.LENGTH_LONG).show()
+                        Toast.makeText(context,"Failed: ${learningLeaderViewState.learningLeaders.error}", Toast.LENGTH_LONG).show()
                     }
                 }
             }

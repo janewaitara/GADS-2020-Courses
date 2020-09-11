@@ -62,8 +62,8 @@ val getRemoteApiModule = module(true) {
     single( override = true) { GetRemoteApi(get()) }
 }
 
-val postRemoteApiModule = module(override = true){
-    single(named("postNetworkModule")){ PostRemoteApi(get()) }
+val postRemoteApiModule = module( true){
+    single(override = true){ PostRemoteApi(get()) }
 }
 
 fun provideOkHttpClient() =  if(BuildConfig.DEBUG){
