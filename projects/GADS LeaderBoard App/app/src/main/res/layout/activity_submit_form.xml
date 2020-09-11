@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:paddingTop="15dp"
+    tools:context=".ui.formSubmission.SubmitFormActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navigationIcon="@drawable/backspace"
+            app:title="LeaderBoard">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gadslogo" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/project_submission"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/line_bg"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <LinearLayout
+        android:id="@+id/name_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_line"
+        android:layout_marginBottom="@dimen/standard_padding"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="0dp"
+            android:textColor="@color/colorAccent"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginStart="@dimen/standard_padding"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textPersonName"
+            android:hint="@string/first_name"
+            android:padding="@dimen/half_padding"
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="0dp"
+            android:textColor="@color/colorAccent"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="@dimen/standard_padding"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:padding="@dimen/half_padding"
+            android:textColorHint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_below="@+id/name_holder"
+        android:layout_margin="@dimen/standard_padding"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/half_padding"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/github_link"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_below="@+id/email"
+        android:layout_margin="@dimen/standard_padding"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/project_on_github_link"
+        android:inputType="text"
+        android:padding="@dimen/half_padding"
+        android:textColorHint="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/github_link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:background="@drawable/submit_bg"
+        android:paddingStart="@dimen/half_padding"
+        android:paddingEnd="@dimen/half_padding"
+        android:text="@string/submit"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

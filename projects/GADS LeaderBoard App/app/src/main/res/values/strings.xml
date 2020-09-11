@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GADS LeaderBoard</string>
+
+    <string name="hello_learners_fragment">Hello Learners fragment</string>
+    <string name="hello_skillIQ_fragment">Hello Skill IQ  fragment</string>
+    <string name="learner_name">Learner Name</string>
+    <string name="leaders_hrs_and_country">leaders hrs and country</string>
+    <string name="leaders_hrs_and_country_entry">%1$s learning hours, %2$s </string>
+    <string name="leaders_skillIQ_and_country">leaders skill IQ and country</string>
+    <string name="leaders_skillIQ_and_country_entry">%1$s learning skill IQ, %2$s </string>
+    <string name="badge_image">Badge Image</string>
+    <string name="submit">Submit</string>
+    <string name="project_submission">Project Submission</string>
+    <string name="project_on_github_link">Project on GITHUB (link)</string>
+    <string name="email_address">Email Address</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="confirmation_msg">Are you sure ?</string>
+    <string name="confirm">Yes</string>
+    <string name="successful">Submission Successful</string>
+    <string name="failed">Submission not Successful</string>
+    <string name="gads_image">GADS image</string>
+</resources>

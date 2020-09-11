@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    card_view:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/learning_leader_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/learning_leader_image"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:text="@string/learner_name" />
+
+        <ImageView
+            android:id="@+id/learning_leader_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/badge_image"
+            app:srcCompat="@drawable/toplearner" />
+
+        <TextView
+            android:id="@+id/learning_leader_hours_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/learning_leader_image"
+            android:layout_below="@+id/learning_leader_name"
+            android:layout_marginTop="5dp"
+            android:text="@string/leaders_hrs_and_country" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
