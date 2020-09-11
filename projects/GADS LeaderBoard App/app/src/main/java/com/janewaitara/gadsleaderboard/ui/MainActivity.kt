@@ -1,15 +1,14 @@
-package com.janewaitara.gadsleaderboard
+package com.janewaitara.gadsleaderboard.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.content.ContentProviderCompat.requireContext
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayoutMediator
+import com.janewaitara.gadsleaderboard.R
 import com.janewaitara.gadsleaderboard.ui.formSubmission.SubmitFormActivity
 import com.janewaitara.gadsleaderboard.ui.learnerLeaders.LearnersLeaderFragment
 import com.janewaitara.gadsleaderboard.ui.skillIQLeaders.SkillIQLeadersFragment
@@ -29,7 +28,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initViewPager2() {
-        val adapter = ViewPagerAdapter(supportFragmentManager,lifecycle)
+        val adapter =
+            ViewPagerAdapter(
+                supportFragmentManager,
+                lifecycle
+            )
         view_pager2.adapter = adapter
 
         val names = arrayListOf("Learning Leaders", "SkillIQ Leaders")

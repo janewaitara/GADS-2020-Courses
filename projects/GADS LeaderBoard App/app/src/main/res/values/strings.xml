@@ -19,4 +19,5 @@
     <string name="confirm">Yes</string>
     <string name="successful">Submission Successful</string>
     <string name="failed">Submission not Successful</string>
+    <string name="gads_image">GADS image</string>
 </resources>
