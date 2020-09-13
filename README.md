@@ -37,15 +37,15 @@ Entries IDs:
   <p align="center">
 
 
-<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/splashscreen.jpg" width="30%" height="500px">
-<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/leadersloading.jpg" width="30%" height="500px">
-<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/learningleaders.jpg" width="30%" height="500px">
-<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/skilliqleaders.jpg" width="30%" height="500px">
-<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/formsubmission.jpg" width="30%" height="500px">
-<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/formsubmission2.jpg" width="30%" height="500px">
-<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/confirmation.jpg" width="30%" height="500px">
-<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/formsubmissionloading.jpg" width="30%" height="500px">
-<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/submissionSuccessful.jpg" width="30%" height="500px">
-<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/error.jpg" width="30%" height="500px">
+<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/splashscreen.jpg" width="30%" height="600px">
+<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/leadersloading.jpg" width="30%" height="600px">
+<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/learningleaders.jpg" width="30%" height="600px">
+<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/skilliqleaders.jpg" width="30%" height="600px">
+<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/formsubmission.jpg" width="30%" height="600px">
+<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/formsubmission2.jpg" width="30%" height="600px">
+<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/confirmation.jpg" width="30%" height="600px">
+<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/formsubmissionloading.jpg" width="30%" height="600px">
+<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/submissionSuccessful.jpg" width="30%" height="600px">
+<img src="https://github.com/janewaitara/GADS-2020-Courses/blob/master/projects/images/error.jpg" width="30%" height="600px">
 
 </p>
